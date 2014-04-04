@@ -8,11 +8,15 @@ PebbleSpheroApp.prototype.init = function(elroy){
     elroy.observe('type="smartwatch"').subscribe(function(pebble) {
       elroy.expose(pebble);
       pebble.on('top-button', function(){
-        sphero.call('move', 'forward', 2);
+        sphero.call('right');
       });
 
       pebble.on('bottom-button', function() {
-        sphero.call('move', 'backward', 2);
+        sphero.call('left');
+      });
+
+      pebble.on('select-button', function() {
+        sphero.call('move', 5);
       });
     });
   });
