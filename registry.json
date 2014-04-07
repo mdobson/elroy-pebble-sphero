@@ -1,1 +1,1 @@
-{"devices":[{"type":"Sphero","name":"Matts Sphero"},{"type":"smartwatch","name":"Matts Pebble","data":{"Pebble":"EAE8"}}]}
+{"devices":[{"type":"sphero","name":"Matts Sphero"},{"type":"smartwatch","name":"Matts Pebble","data":{"Pebble":"EAE8"}}]}
