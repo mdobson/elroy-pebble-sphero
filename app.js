@@ -7,6 +7,7 @@ var cb = function() {};
 PebbleSpheroApp.prototype.init = function(elroy){
   elroy.observe('type="sphero"')
   .zip(elroy.observer('type="smartwatch"'))
+  .first()
   .subscribe(function(devices) {
     var sphero = devices[0];
     var pebble = devices[1];
