@@ -1,5 +1,5 @@
-var SpheroScout = require('../elroy-sphero-driver');
-var PebbleScout = require('elroy-pebble-driver');
+var SpheroScout = require('zetta-sphero-driver');
+var PebbleScout = require('zetta-pebble-driver');
 
 module.exports = function(runtime) {
   runtime.scouts.push(SpheroScout);
